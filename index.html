@@ -5,33 +5,35 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Paolo Merialdo</title>
 
-	<!-- file style.css -->
+	<!-- FILE .CSS -->
 	<link rel="stylesheet" href="./static/css/style.css">
+	<link rel="stylesheet" href="./static/css/accordion.css">
 </head>
 <body>
-	<!-- header -->
+	<!-- HEADER -->
 	<header>
 		<div class="logo">Paolo Merialdo</div>
-		<!-- menu desktop -->
+		<!-- MENU DESKTOP -->
 		<nav class="menu-desktop">
 			<div class="menu-item"><a href="#research">RESEARCH</a></div>
 			<div class="menu-item"><a href="#didattica">DIDATTICA</a></div>
 			<div class="menu-item"><a href="#tesiETirocini">TESI E TIROCINI</a></div>
 			<div class="menu-item"><a href="#otherActivities">ACTIVITIES</a></div>
 		</nav>
-	    <!-- menu mobile -->
+	    <!-- MENU MOBILE -->
 		<nav class="menu-mobile">
 		</nav>
 	</header>
 
-	<!-- page -->
+	<!-- PAGE-->
+	<!-- SECTION PROFILE -->
 	<section class="container-profilo">
 		<div class="profilo">
 			<img class="circular-image img-profilo" src="./static/images/paolo-merialdo1.png"> 
 			<h2>Università Roma Tre <br> Dipartimento di Ingegneria</h2>
 			<div class="descrizione-profilo">
 				<div class="item1">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2971.7122051102965!2d12.466947215440447!3d41.856020979224056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13258a93dee902b1%3A0x14fd2f964414ebde!2sVia%20della%20Vasca%20Navale%2C%2079%2C%2000146%20Roma%20RM!5e0!3m2!1sen!2sit!4v1650710284331!5m2!1sen!2sit" width="90%" height="150" style="border:0;box-shadow: 0 0 8px #333333; border-radius: 4px; margin-left: 20px;" allowfullscreen="" loading="lazy"></iframe>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2971.7122051102965!2d12.466947215440447!3d41.856020979224056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13258a93dee902b1%3A0x14fd2f964414ebde!2sVia%20della%20Vasca%20Navale%2C%2079%2C%2000146%20Roma%20RM!5e0!3m2!1sen!2sit!4v1650710284331!5m2!1sen!2sit" width="90%" height="180" class="map" allowfullscreen="" loading="lazy"></iframe>
 				</div>
 				<div class="item2">
 					<p>
@@ -39,9 +41,10 @@
 						00146 - Roma (Italy)
 						<strong>Tel.:</strong> +39-06.5733.3218<br>
 						<strong>Fax:</strong> +39-06.5733.3211<br>
-						<strong>Email:</strong> paolo.merialdo@uniroma3.it
+						<strong>Email:</strong> 
+						<a href="mailto:paolo.merialdo@uniroma3.it">paolo.merialdo@uniroma3.it</a>
 					</p>
-					<a class="btn" _target="blank" href="./static/pdf/cv-paolo-merialdo.pdf">
+					<a class="btn" target="_blank" href="./static/pdf/1621524546PaoloMerialdo-2021-05-14-EN.pdf">
 						My Curriculum Vitae
 					</a>
 					<br>
@@ -49,10 +52,88 @@
 			</div>
 		</div>
 	</section>
-		<br><br><br><br><br><br><br><br><br><br>
+
+	<!-- SECTION RESEARCH -->
 	<section id="research">
-		<h2>Research</h2>
+		<div class="container">
+			<h2 class="container-title">RESEARCH</h2>
+			<hr>
+			<h3>Research Activities</h3>
+		    <div class="tabs">
+		    	<div class="tab">
+		    		<input type="checkbox" id="chck1">
+		    		<label class="tab-label" for="chck1">
+		    			In codice Ratio: Machine Learning meets Digital Humanities.
+		    		</label>
+		    		<div class="tab-content">
+		    			Read the MIT Technology Review article on the project!
+		    			<ul>
+		    				<li>
+		    					Lorenzo Lastilla, Serena Ammirati, Donatella Firmani, Nikos Komodakis, Paolo Merialdo, Simone Scardapane. Self-supervised learning for medieval handwriting identification: A case study from the Vatican Apostolic Library Information Processing & Management 59:3 (2022)
+		    				</li>
+		    				<li>
+		    					Elena Nieddu, Donatella Firmani, Paolo Merialdo, Marco Maiorino. In Codice Ratio: A crowd-enabled solution for low resource machine transcription of the Vatican Registers Information Processing & Management 58:2 (2021)
+		    				</li>
+		    				<li>
+		    					Donatella Firmani, Marco Maiorino, Paolo Merialdo, Elena Nieddu Towards Knowledge Discovery from the Vatican Secret Archives. In Codice Ratio-Episode 1: Machine Transcription of the Manuscripts. ACM KDD 2018
+		    				</li>
+		    			</ul>	
+		    		</div>
+		    	</div>
+		    	<div class="tab">
+		    		<input type="checkbox" id="chck2">
+		    		<label class="tab-label" for="chck2">
+		    			Explainable AI for Big Data Management Issues
+		    		</label>
+		    		<div class="tab-content">
+		    			.
+		    			<ul>
+		    				<li>
+		    					Vincenzo Di Cicco, Donatella Firmani, Nick Koudas, Paolo Merialdo, Divesh Srivastava Interpreting deep learning models for entity resolution: an experience report using LIME: Explaining Deep Learning Models for Entity Resolution.. Second International Workshop on Exploiting Artificial Intelligence Techniques for Data Management. Code on github
+		    				</li>
+		    				<li>
+		    					Tommaso Teofili, Donatella Firmani, Nick Koudas, Vincenzo Martello, Paolo Merialdo, Divesh Srivastava: Effective Explanations for Entity Resolution Modelsi IEEE ICDE 2022
+		    				</li>
+		    				<li>
+		    					Andrea Rossi, Denilson Barbosa, Donatella Firmani, Antonio Matinata, Paolo Merialdo Knowledge Graph Embedding for Link Prediction: A Comparative Analysis. ACM Transactions on Knowledge Discovery from Data 15:2 pp 1–49
+		    				</li>
+		    				<li>
+		    					Andrea Rossi, Donatella Firmani, Tommaso Teofili, Paolo Merialdo. Explaining Link Prediction Systems based on Knowledge Graph Embeddings. ACM Sigmod 2022
+		    				</li>
+		    			</ul>
+		    		</div>
+		    	</div>
+		    	<div class="tab">
+		    		<input type="checkbox" id="chck3">
+		    		<label class="tab-label" for="chck3">
+		    			Web Data Integration
+		    		</label>
+		    		<div class="tab-content">
+		    			.
+		    			<ul>
+		    				<li>
+		    					Valter Crescenzi, Paolo Merialdo, Disheng Qiu. Hybrid Crowd-Machine Wrapper InferenceACM Transactions on Knowledge Discovery from Data 13:5 pp 1–43 (2019)
+		    				</li>
+		    				<li>
+		    					Matteo Cannaviccio, Denilson Barbosa, Paolo Merialdo Towards annotating relational data on the web with language models 2018 World Wide Web Conference
+		    				</li>
+		    				<li>
+		    					Disheng Qiu, Luciano Barbosa, Valter Crescenzi, Paolo Merialdo, Divesh Srivastava. Big Data Linkage for Product Specification Pages ACM Sigmod 2018
+		    				</li>
+		    				<li>
+		    					Federico Piai, Paolo Atzeni, Paolo Merialdo, Divesh Srivastava. Fine-grained semantic type discovery for heterogeneous sources using clustering VLDBJ 2022 (to appear)
+		    				</li>
+		    			</ul>
+		    		</div>
+		    	</div>
+		    </div>
+		</div>
 	</section>
+
+
+
+
+	<!-- SECTION DIDATTICA -->
 	<br><br><br><br><br><br><br><br><br><br>
 	<section id="didattica">
 		<h2>Didattica (Teaching)</h2>
