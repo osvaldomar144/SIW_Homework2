@@ -1,0 +1,142 @@
+/************************************************************
+ *                                                          *
+ * 	Author:  Osvaldo Alexis Hidalgo Martinez                *
+ *  Description: SIW - Homework 2                           *
+ *                                                          *
+ ************************************************************/
+ 
+/* importazione font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+/* stili generali */
+body {
+	background: #e5e5e5;
+	margin: 0;
+    /*font-family: 'Roboto', sans-serif;*/
+    font-family: 'Oswald', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+section {
+	padding: 2% 8%;
+}
+
+
+/************************  HEADER  ************************/
+
+header {
+	background: #008080;
+	padding: 20px 0px;
+	display: flex;
+}
+
+.logo {
+	width: 20%;
+	margin-left: 5%;
+	padding:  5px 20px;
+	font-size: 42px;
+	font-weight: 700;
+}
+
+/*************************  MENU  *************************/
+
+/* menu desktop */
+
+.menu-desktop {
+	width: 50%;
+	margin: 0 5% 0 17%;
+	display: flex;
+}
+
+.menu-desktop .menu-item {
+	padding: 25px 15px 10px 15px;
+	text-align: center;
+	font-size: 21px;
+	width: calc(100% / 4);
+}
+
+.menu-desktop .menu-item a {
+	color: #fff;
+	font-weight: 500;
+}
+
+.menu-desktop .menu-item:hover {
+	color: #fff;
+	/*border: 2.5px solid #fff;*/
+	padding: 20px 15px 10px 15px;
+	transition-duration: 0.5s;
+}
+
+/* menu mobile */
+
+/*************************  PAGE  *************************/
+/* profilo */
+.container-profilo {
+	/*background: linear-gradient(to right, #3a86c5, #56c4e8, #4cadce, #5cd29d, #4fb69b, #39878a, #255b8a, #405ea0, #585093, #6b4487, #763594, #9d577b, #b0686e, #ef8060, #ee6959, #ec3942, #ee7224);*/
+	background: linear-gradient(to right, #3a86c5, #56c4e8, #4cadce, #5cd29d, #4fb69b, #39878a, #255b8a, #405ea0, #ef8060, #ee6959, #ee7224);
+	background-repeat: no-repeat;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	background-size: 2000% 2000%;
+	animation: colors 70s ease infinite;
+}
+
+/* per animazione colori container-profilo */
+@keyframes colors {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.profilo {
+	width: 65%;
+	margin-top: 7%;
+	padding: 20px;
+	height: 350px;
+	overflow: visible;
+	border-radius: 10px;
+	text-align: center;
+	background: #093f3f;
+	box-shadow: 0 0 8px #333333;
+	color: #fff;
+}
+
+.circular-image {
+    width: 152px;
+    height: 152px;
+    border: 2px solid #a3aeb6;
+    border-radius:999em;   
+    -moz-border-radius:999em; 
+    -webkit-border-radius:999em;
+    -o-border-radius: 999em;  
+}
+
+.img-profilo {
+	margin-top: -100px;
+}
+
+.descrizione-profilo {
+	display: flex;
+}
+
+.descrizione-profilo .item1 {
+	width: 50%;
+	margin-right: 20px;
+}
+
+.descrizione-profilo .item2 {
+	width: 45%;
+	margin-right: 20px;
+}
+/************************  FOOTER  ************************/
