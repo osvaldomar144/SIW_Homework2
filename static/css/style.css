@@ -52,6 +52,14 @@ section {
 	font-size: 17px;
 }
 
+.container a{
+	color: #008080;
+}
+
+.container a:hover{
+	color: #093f3f;
+}
+
 /************************  HEADER  ************************/
 
 header {

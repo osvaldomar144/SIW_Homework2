@@ -12,6 +12,10 @@
   overflow: hidden;
 }
 
+.tabs .tab h2,h3,h4 {
+  margin-top: 0;
+}
+
 .tab-label {
   display: flex;
   justify-content: space-between;
