@@ -187,10 +187,25 @@ header {
 	margin-left: 20px;
 }
 
-/* RESEARCH */
+/* sections */
 .container-title {
 	border-left: 5px solid #008080;
 	padding-left: 10px;
 }
 
+.img-responsive {
+	width: 100%;
+}
+
 /************************  FOOTER  ************************/
+footer {
+	background: #111;
+	padding: 20px 0px;
+	display: flex;
+	justify-content: center;
+}
+
+footer p {
+	justify-content: center;
+	color: #fff;
+}
