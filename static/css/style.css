@@ -12,7 +12,7 @@
 body {
 	background: #e5e5e5;
 	margin: 0;
-    font-family: 'Oswald', sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 a {
@@ -26,6 +26,14 @@ a:hover {
 
 section {
 	padding: 2% 8%;
+}
+
+i {
+	color: #008080;
+}
+
+i:hover {
+	color: #093f3f;
 }
 
 .btn {
@@ -79,7 +87,6 @@ header {
 /*************************  MENU  *************************/
 
 /* menu desktop */
-
 .menu-desktop {
 	width: 50%;
 	margin: 0 5% 0 17%;
@@ -106,6 +113,37 @@ header {
 }
 
 /* menu mobile */
+.section-menu-mobile {
+	padding: 3% 0;
+	display: none;
+}
+
+.menu-mobile {
+	  width: 100%;
+	  padding: 20px 0px;
+		display: flex;
+		justify-content: center;
+		background: #fff;
+    /* posizionamento in fondo alla pagina */
+    position: fixed;
+    bottom: 0;
+    overflow: auto;
+}
+
+.menu-mobile .menu-item {
+	text-align: center;
+	font-size: 18px;
+	width: calc(100% / 4);
+}
+
+.menu-mobile .menu-item a {
+	color: #008080;
+	font-weight: 500;
+}
+
+.menu-mobile .menu-item a:hover {
+	color: #093f3f;
+}
 
 /*************************  PAGE  *************************/
 /* PROFILO */
@@ -209,3 +247,106 @@ footer p {
 	justify-content: center;
 	color: #fff;
 }
+
+/*********************** @MEDIA ****************************/
+
+@media (max-width: 1280px){
+	.logo {
+		font-size: 35px;
+	}
+
+	.menu-desktop .menu-item {
+		font-size: 17px;
+	}
+
+	.descrizione-profilo .item2 {
+		font-size: 16px;
+	}
+
+}
+
+@media (max-width: 1077px){
+	.menu-desktop {
+		display: none;
+	}
+
+	.section-menu-mobile {
+		display: block;
+	}
+
+	.logo {
+		width: 100%;
+		font-size: 38px;
+	}
+
+	.profilo {
+		margin-top: 9%;
+	}
+}
+
+@media (max-width: 890px){
+	.descrizione-profilo .item1 {
+		display: none;
+	}
+
+	.descrizione-profilo .item2 {
+		width: 98%;
+	}
+
+	.section-menu-mobile {
+		padding: 4% 0;
+	}
+}
+
+@media (max-width: 590px){
+	.section-menu-mobile {
+		padding: 5% 0;
+	}
+
+	.menu-mobile .menu-item {
+		font-size: 15px;
+	}
+
+	.circular-image {
+    width: 120px;
+    height: 120px;
+	}
+
+	.img-profilo {
+		margin-top: -70px;
+	}
+}
+
+@media (max-width: 470px){
+	.section-menu-mobile {
+		padding: 6% 0;
+	}
+
+	.menu-mobile .menu-item {
+		font-size: 12px;
+	}
+
+	.profilo h2 {
+		font-size: 18px;
+	}
+
+	.descrizione-profilo .item2 {
+		font-size: 16px;
+	}
+
+	.circular-image {
+    width: 100px;
+    height: 100px;
+	}
+
+	.img-profilo {
+		margin-top: -50px;
+	}
+
+	.btn-cv {
+		font-size: 15px;
+		padding: 10px 32px;
+	}
+}
+
+
